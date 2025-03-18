@@ -150,10 +150,9 @@ if [ "$IMAGE_CHOICE" -eq 1 ]; then
     IMG_PATH="/var/lib/vz/template/iso/m-shell.img"
     IMG_ZIP_PATH="/var/lib/vz/template/iso/m-shell.img.gz"
 	download_and_extract_image $IMG_URL $IMG_ZIP_PATH $IMG_PATH
-elif [ "$IMAGE_CHOICE" -eq 2 ]; then
-    #IMG_URL="https://github.com/RROrg/rr/releases/download/25.1.4/rr-25.1.4.img.zip"
+elif [ "$IMAGE_CHOICE" -eq 2 ]; then    
     IMG_URL="https://github.com/RROrg/rr/releases/download/25.3.2/rr-25.3.2.img.zip"
-    IMG_ZIP_PATH="/var/lib/vz/template/iso/rr-25.1.4.img.zip"
+    IMG_ZIP_PATH="/var/lib/vz/template/iso/rr-25.3.2.img.zip"
     IMG_PATH="/var/lib/vz/template/iso/rr.img"
     download_and_extract_image $IMG_URL $IMG_ZIP_PATH $IMG_PATH
 elif [ "$IMAGE_CHOICE" -eq 3 ]; then
