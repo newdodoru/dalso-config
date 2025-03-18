@@ -147,18 +147,18 @@ IMAGE_CHOICE=${IMAGE_CHOICE:-1}  # 값이 입력되지 않으면 기본값 1로 
 # 이미지 파일 경로 설정
 if [ "$IMAGE_CHOICE" -eq 1 ]; then  
     IMG_URL="https://github.com/PeterSuh-Q3/tinycore-redpill/releases/download/v1.2.2.2/tinycore-redpill.v1.2.2.2.m-shell.img.gz"
-    IMG_PATH="/var/lib/vz/template/iso/m-shell.img"
-    IMG_ZIP_PATH="/var/lib/vz/template/iso/m-shell.img.gz"
+    IMG_ZIP_PATH="/root/m-shell.img.gz"
+    IMG_PATH="/root/m-shell.img"
 	download_and_extract_image $IMG_URL $IMG_ZIP_PATH $IMG_PATH
-elif [ "$IMAGE_CHOICE" -eq 2 ]; then    
+elif [ "$IMAGE_CHOICE" -eq 2 ]; then
     IMG_URL="https://github.com/RROrg/rr/releases/download/25.3.2/rr-25.3.2.img.zip"
-    IMG_ZIP_PATH="/var/lib/vz/template/iso/rr-25.3.2.img.zip"
-    IMG_PATH="/var/lib/vz/template/iso/rr.img"
+    IMG_ZIP_PATH="/root/rr-25.3.2.img.zip"
+    IMG_PATH="/root/rr.img"
     download_and_extract_image $IMG_URL $IMG_ZIP_PATH $IMG_PATH
 elif [ "$IMAGE_CHOICE" -eq 3 ]; then
     IMG_URL="https://github.com/PeterSuh-Q3/tinycore-redpill/releases/download/v1.2.2.2/tinycore-redpill.v1.2.2.2.xtcrp.img.gz"
-    IMG_PATH="/var/lib/vz/template/iso/xtcrp.img"
-    IMG_ZIP_PATH="/var/lib/vz/template/iso/xtcrp.img.gz"
+    IMG_ZIP_PATH="/root/xtcrp.img.gz"
+    IMG_PATH="/root/xtcrp.img"
 	download_and_extract_image $IMG_URL $IMG_ZIP_PATH $IMG_PATH
 else
     echo "잘못된 선택입니다. 1 부터 3까지의 숫자를 입력하세요."
